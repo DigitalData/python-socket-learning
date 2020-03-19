@@ -8,8 +8,9 @@ import os
 
 HEADER_LENGTH = 3
 
+print("Sender Client")
 IP = input("Enter IP: ") #"192.168.1.117"
-PORT = input("Enter PORT: ") #9876
+PORT = int(input("Enter PORT: ")) #9876
 
 message = None
 my_username = input("Username: ")

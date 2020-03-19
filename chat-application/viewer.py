@@ -10,8 +10,9 @@ HEADER_LENGTH = 3
 MAX_MESSAGES = 20
 MESSAGE_TIMEOUT = 1
 
+print("Viewer Client")
 IP = input("Enter IP: ") #"192.168.1.117"
-PORT = input("Enter PORT: ") #9876
+PORT = int(input("Enter PORT: ")) #9876
 
 message = None
 my_username = "Viewer"#input("Username: ")
@@ -86,7 +87,8 @@ def receive_msg():
 def nextStep():
     cls()
     message_list.sort()
-    print(f"Cool Chat Application")
+    print("Viewer Client")
+    print(f'Connected to {IP}:{PORT}')
     for msg in message_list[-MAX_MESSAGES:]:
         print(msg)
 
