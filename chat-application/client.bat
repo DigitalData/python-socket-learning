@@ -1,0 +1,1 @@
+start python viewer.py & start python sender.py
