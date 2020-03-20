@@ -2,8 +2,8 @@ import socket
 import select
 
 HEADER_LENGTH = 3
-IP = "192.168.1.117"
-PORT = 9876
+IP = input("Enter Server IP: ") #"192.168.1.110" #"192.168.1.117"
+PORT = input("Enter Server PORT: ") #9876
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

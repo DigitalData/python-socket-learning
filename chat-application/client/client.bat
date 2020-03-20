@@ -1,1 +1,1 @@
-start python viewer.py & start python sender.py
+start viewer.py & start sender.py
