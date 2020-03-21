@@ -2,13 +2,13 @@ import socket
 import select
 
 HEADER_LENGTH = 3
-IP = input("Enter Server IP: ") #"192.168.1.110" #"192.168.1.117"
-PORT = input("Enter Server PORT: ") #9876
+IP = socket.gethostbyname(socket.gethostname()) #input("Enter Server IP: ") #"192.168.1.110" #"192.168.1.117"
+PORT = int(input("Enter Server PORT: ")) #9876
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_socket.bind((IP, PORT))
-server_socket.listen()
+server_socket.listen(100)
 
 print(f'Server has started at {IP}:{PORT}')
 
