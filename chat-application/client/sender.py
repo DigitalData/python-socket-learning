@@ -32,7 +32,7 @@ def send_msg(msg):
 
 
 def nextStep():
-    message = input(f"{my_username}: ")
+    message = input(f"{my_username} > ")
     send_msg(message)
     nextStep()
 
